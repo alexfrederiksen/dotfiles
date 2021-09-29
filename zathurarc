@@ -1,0 +1,11 @@
+map d scroll half-down
+map u scroll half-up
+map ; goto
+map <C-i> recolor
+
+set synctex true
+set synctex-editor-command "nvr --remote-silent %{input} -c %{line}"
+
+set recolor "true"
+set default-bg rgba(0,0,0,0.8)
+set recolor-lightcolor rgba(40,40,40,0)

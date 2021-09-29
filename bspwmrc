@@ -8,9 +8,9 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 bspc config presel_feedback_color "#444444"
 
 
-bspc config border_width         2
+bspc config border_width         0
 #bspc config window_gap          12
-bspc config window_gap           7
+bspc config window_gap           0
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
@@ -30,13 +30,13 @@ bspc rule -a Polybar state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Nm-connection-editor state=floating
 
-feh --bg-fill ~/wallpapers/megumin1.jpeg
+feh --bg-fill ~/wallpapers/megumin1.png
 
 # make sure we see ourselves as LG3D for idea
 wmname LG3D
 
 # start compositor
-# picom --experimental-backend &
+picom --experimental-backend &
 
 # start notification manager
 # dunst &
